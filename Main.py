@@ -14,7 +14,7 @@ adress = "c:/Users/Lenovo/Desktop/Project/UrFUhackaton_jan2023_ESUSteam"
 #3. Загрузить датасет на гитхаб не вышло, так что, если кому надо, вот ссылка https://github.com/zzzDavid/ICDAR-2019-SROIE/tree/master/data
 
 #Первая переменная - путь к изучаемой картинке.
-#Вторая переменная - место, куда будет сохранен итоговый файл.
+#Вторая переменная - место, куда будет сохранен файл с результатами.
 def text_print(adress, adress1):
     text = text_recognition(adress)
     f = open(adress1, 'w')
