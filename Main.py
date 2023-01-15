@@ -19,7 +19,7 @@ def text_print(adress, adress1):
     text = text_recognition(adress)
     f = open(adress1, 'w')
     for i in range(len(text)):
-        f.write(str(text[i][0])+", "+str(text[i][1]))
+        f.write("("+str(text[i][0])+", "+str(text[i][1])+")")
         if(i != len(text)-1):
             f.write('\n')
     f.close()
