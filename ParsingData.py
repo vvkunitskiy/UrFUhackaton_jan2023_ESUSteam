@@ -10,7 +10,7 @@ def parsing_data(data):
     #Обрабатываем строки по очереди
     for i in range(len(data)):
 
-        if data[i][1]!= '0':
+        if data[i][1]!= 'O':
             if data[i][1] == 'S-COMPANY':
                 company += data[i][0]+ ' '
 
