@@ -3,6 +3,9 @@
 ## **Runtime**
 *Python 3.8.10*
 
+## **Dataset**
+https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sharing
+
 ## **Table of contents**
 [1. Project description](#project-description)  
 [2. Which case is being solved](#which-case-is-being-solved)  
@@ -52,12 +55,20 @@
 [**⬆**](#table-of-contents) *to the contents*
 
 ### **Project stages**
-   
+* В папке [_PreSolution with easyocr](https://github.com/vvkunitskiy/UrFUhackaton_jan2023_ESUSteam/tree/main/_PreSolution%20with%20easyocr) первоначальная реализация распознавания с помощью easyocr без классификации сегментов
+* Далее реализованна Google Colab версия первичного распознавания без классификации. Эта версия [тут]()
+* Далее реализована предварительная Google Colab версия с распознаванием и классификацией сегментов. Эта версия [тут](https://drive.google.com/file/d/1Yqz4HqlrKp3LJg3SZBEMr20zkCgqKUo0/view?usp=sharing). Связаная с ней Google Drive папка [тут](https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sharing)
 
 [**⬆**](#table-of-contents) *to the contents*
 
 ### **Results:**
-   
+f1 = 0.9574013157894736
+
+loss = 0.07235755896743451
+
+precision = 0.9495921696574225
+
+recall = 0.9653399668325041
 
 [**⬆**](#table-of-contents) *to the contents*
 
