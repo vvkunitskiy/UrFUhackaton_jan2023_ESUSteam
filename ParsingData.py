@@ -1,3 +1,5 @@
+import json
+
 #На вход будет подаваться набор из множества строк, хранящих в себе информацию о конкретной компании.
 #Надо извлечь оттуда необходимый минимум и скомпилировать его в одну строку
 def parsing_data(data):
@@ -23,4 +25,11 @@ def parsing_data(data):
             if data[i][1] == 'S-TOTAL':
                 total += data[i][0]
 
-    return f"company: {company}, date: {date}, adress: {adress}, total: {total}"
+    value = {
+        "company":company,
+        "date":date,
+        "adress":adress,
+        "total":total
+    }
+
+    return json.dumps(value)
