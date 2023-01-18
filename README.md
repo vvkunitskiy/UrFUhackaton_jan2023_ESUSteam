@@ -63,8 +63,11 @@ https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sha
 
 ### **Results:**
 f1 = 0.9574013157894736
+
 loss = 0.07235755896743451
+
 precision = 0.9495921696574225
+
 recall = 0.9653399668325041
 
 [**⬆**](#table-of-contents) *to the contents*
