@@ -9,21 +9,23 @@ def parsing_data(data):
     adress = ""
     total = ""
 
+    data = data.split('\n')
     #Обрабатываем строки по очереди
     for i in range(len(data)):
+        word = data[i].split(' ')
 
-        if data[i][1]!= 'O':
+        if word[1]!= 'O':
             if data[i][1] == 'S-COMPANY':
-                company += data[i][0]+ ' '
+                company += word[0]+ ' '
 
             if data[i][1] == 'S-ADDRESS':
-                adress += data[i][0] + ' '
+                adress += word[0] + ' '
 
             if data[i][1] == 'S-DATE':
-                date += data[i][0]
+                date += word[0]
 
             if data[i][1] == 'S-TOTAL':
-                total += data[i][0]
+                total += word[0]
 
     value = {
         "company":company,
