@@ -3,7 +3,7 @@
 ## **Runtime**
 *Python 3.8.10*
 
-## **Dataset**
+## **SROIE Dataset**
 https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sharing
 
 ## **Table of contents**
