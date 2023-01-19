@@ -32,7 +32,6 @@ def parsing_data(data):
            company = company[:-1] 
            adress = adress[:-1]         
            final_data= final_data +'{' +  '"company": ' +'"'+ company+'"'+', '+  '"date": ' +'"'+ date+'"'+', '+  '"adress": ' +'"'+ adress+'"'+', '+  '"total": ' +'"'+ total+'"'+'}'+'\n'
-           print(final_data)
            company = ""
            adress = ""
            date = ""
