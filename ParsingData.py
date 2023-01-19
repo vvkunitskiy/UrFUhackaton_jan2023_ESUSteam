@@ -1,6 +1,3 @@
-import tkinter as tk
-from tkinter import filedialog
-
 #На вход будет подаваться набор из множества строк, хранящих в себе информацию о множестве различных компаний.
 #На выход надо будет подать строку, хранящую в себе общую информацию по каждой из компаний.
 def parsing_data(data):
@@ -39,23 +36,4 @@ def parsing_data(data):
            company = ""
            adress = ""
            date = ""
-           total = ""
-        #Задаем адрес папки, в которой будет сохранен исходный файл.
-    root = tk.Tk()
-    root.withdraw()
-    file_path = filedialog.askdirectory()
-    f = open(file_path+"/1.txt", 'w')
-    f.write(final_data)
-    f.close()
     return final_data
-
-
-root = tk.Tk()
-root.withdraw()
-
-#Вводим в программу ссылку на путь к искомому файлу
-file_path = filedialog.askopenfilename()
-print(file_path)
-with open(file_path) as f:
-        my_lines = list(f) 
-parsing_data(my_lines)
