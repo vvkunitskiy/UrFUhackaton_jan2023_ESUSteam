@@ -19,13 +19,13 @@ def parsing_data(data):
               company = company+str(block[0])+' '
 
            if block[1]=='S-ADDRESS\n':
-              adress += block[0]+' '
+              adress += str(block[0])+' '
 
            if block[1] =='S-DATE\n':
-                date += block[0]
+                date += str(block[0])
 
            if block[1] == 'S-TOTAL\n':
-              total += block[0]
+              total += str(block[0])
 
         #Итак, мы прошлись по всем строкам данного блока, пора подготовить полученные данные к отправке.
         if total != '': 
