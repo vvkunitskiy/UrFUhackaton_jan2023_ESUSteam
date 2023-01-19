@@ -12,7 +12,7 @@ def parsing_data(data):
     for i in range(len(data)):
 
         #По тобуляции делим строку на элементы, каждая строка состоит из 2-х элементов: слово, класс слова
-        if data[i] != '\n':
+        if data[i] != '':
            block = data[i].split('\t')
 
            if block[1] == 'S-COMPANY\n':
