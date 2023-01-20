@@ -76,6 +76,10 @@ https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sha
 ### **Project stages**
 * В папке [_PreSolution with easyocr](https://github.com/vvkunitskiy/UrFUhackaton_jan2023_ESUSteam/tree/main/_PreSolution%20with%20easyocr) первоначальная реализация распознавания с помощью easyocr без классификации сегментов
 * Далее реализованна Google Colab версия первичного распознавания без классификации. Эта версия [тут]()
+* Далее задача сегментации без классификации с помощью easyocr была доведена до финального решения. Для этого запустите файл [easyocr_run.py](https://github.com/vvkunitskiy/UrFUhackaton_jan2023_ESUSteam/blob/main/easyocr_run.py) (не требует для выполнения каких-либо иных файлов), установив зависимости:
+```
+pip install easyocr
+```
 * Далее реализована предварительная Google Colab версия с распознаванием и классификацией сегментов. Эта версия [тут](https://drive.google.com/file/d/1Yqz4HqlrKp3LJg3SZBEMr20zkCgqKUo0/view?usp=sharing). Связаная с ней Google Drive папка [тут](https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sharing)
 
 На данном этапе была взята модель из [LayoutLM Github project](https://github.com/microsoft/unilm) и обучена на данных из предостваленного датасета. Однако структура датасета была так же переработана для улучшения результатов обучения. Например, для обучения подавались данные, где сегменты с текстом были поделены до уровня каждого слова, а не строки.
