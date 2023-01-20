@@ -25,6 +25,7 @@ for root, dirs, files in os.walk(input_directory):
 		
 		file_path = root+filename
 		record_to_file = ''
+		file_path_to_save = output_directory+filename
 		
 		reader = easyocr.Reader(["en"])
 		try:
@@ -35,11 +36,11 @@ for root, dirs, files in os.walk(input_directory):
 			
 		
 		try:
-			mediafile_extension = Path(file_path).suffixes[-1]
+			mediafile_extension = Path(file_path_to_save).suffixes[-1]
 		except:
 			mediafile_extension = ''
 			
-		file_path = file_path.removesuffix(mediafile_extension)
+		file_path_to_save = file_path_to_save.removesuffix(mediafile_extension)
 			
 		for line in image_predict:
 			coordinates = str(line[0])
@@ -51,39 +52,6 @@ for root, dirs, files in os.walk(input_directory):
 
 			record_to_file += coordinates + ',' + text_box + '\n'
 		
-		recording_file = open(file_path+'-1.txt', 'w+')
+		recording_file = open(file_path_to_save+'-1.txt', 'w+')
 		recording_file.write(record_to_file)
-		
-		
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		recording_file.close()
