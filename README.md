@@ -77,6 +77,9 @@ https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sha
 * В папке [_PreSolution with easyocr](https://github.com/vvkunitskiy/UrFUhackaton_jan2023_ESUSteam/tree/main/_PreSolution%20with%20easyocr) первоначальная реализация распознавания с помощью easyocr без классификации сегментов
 * Далее реализованна Google Colab версия первичного распознавания без классификации. Эта версия [тут]()
 * Далее реализована предварительная Google Colab версия с распознаванием и классификацией сегментов. Эта версия [тут](https://drive.google.com/file/d/1Yqz4HqlrKp3LJg3SZBEMr20zkCgqKUo0/view?usp=sharing). Связаная с ней Google Drive папка [тут](https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sharing)
+
+На данном этапе была взята модель из LayoutLM Github project и обучена на данных из предостваленного датасета. Однако структура датасета была так же переработана для улучшения результатов обучения. Например, для обучения подавались данные, где сегменты с текстом были поделены до уровня каждого слова, а не строки.
+
 ![photo_2023-01-19_18-58-26](https://user-images.githubusercontent.com/46627206/213643690-8bdd549f-ad0d-45d3-bb15-372bc7a833ad.jpg)
 
 [**⬆**](#table-of-contents) *to the contents*
