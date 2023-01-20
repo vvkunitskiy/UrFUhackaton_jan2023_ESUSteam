@@ -80,7 +80,7 @@ https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sha
 ```
 pip install easyocr
 ```
-* Далее реализована предварительная Google Colab версия с распознаванием и классификацией сегментов. Эта версия [тут](https://drive.google.com/file/d/1Yqz4HqlrKp3LJg3SZBEMr20zkCgqKUo0/view?usp=sharing). Связаная с ней Google Drive папка [тут](https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sharing)
+* Далее реализована предварительная Google Colab версия с распознаванием и классификацией сегментов. Эта версия [тут](https://drive.google.com/file/d/1Yqz4HqlrKp3LJg3SZBEMr20zkCgqKUo0/view?usp=sharing). Связаная с ней Google Drive папка [тут](https://drive.google.com/drive/folders/1UqIHGKX4_W6DpEXPKOpHRXCEcCah1Rfn?usp=sharing). Так же код колаба можно скачать из текущего репозитория - файл [layoutlm_using_the_sroie_dataset.ipynb](https://github.com/vvkunitskiy/UrFUhackaton_jan2023_ESUSteam/blob/main/layoutlm_using_the_sroie_dataset.ipynb)
 
 На данном этапе была взята модель из [LayoutLM Github project](https://github.com/microsoft/unilm) и обучена на данных из предостваленного датасета. Однако структура датасета была так же переработана для улучшения результатов обучения. Например, для обучения подавались данные, где сегменты с текстом были поделены до уровня каждого слова, а не строки.
 
