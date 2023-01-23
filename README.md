@@ -117,5 +117,4 @@ Recall - насколько часто модель находит все пол
 [**⬆**](#table-of-contents) *to the contents*
 
 
-Please, rate this project with ⭐️-s if you consider its interesting or useful.
-
+Please, rate this project with ⭐️-s if you consider its interesting or useful!
